@@ -22,9 +22,9 @@
 </table>
 ```
 
-For each *row*, the <table> tag contains a <tr> tag. Inside of these <tr> tags, we can put cell elements: either heading cells (<th>) or regular cells (<td>).
+For each *row*, the `<table>` tag contains a `<tr>` tag. Inside of these `<tr>` tags, we can put cell elements: either heading cells `(<th>)` or regular cells `(<td>)`.
 
-Given a data set of mountains, an array of objects with name, height, and place properties, generate the DOM structure for a table that enumerates the objects. It should have one column per key and one row per object, plus a header row with <th> elements at the top, listing the column names.
+Given a data set of mountains, an array of objects with name, height, and place properties, generate the DOM structure for a table that enumerates the objects. It should have one column per key and one row per object, plus a header row with `<th>` elements at the top, listing the column names.
 
 Write this so that the columns are automatically derived from the objects, by taking the property names of the first object in the data.
 
@@ -42,7 +42,7 @@ To find the tag name of an element, use its nodeName property. But note that thi
 <br>
 3. <b>The cat’s hat</b>
 
-<br>Extend the cat animation defined earlier so that both the cat and his hat (<img src="img/hat.png">) orbit at opposite sides of the ellipse.
+<br>Extend the cat animation defined earlier so that both the cat and his hat `(<img src="img/hat.png">)` orbit at opposite sides of the ellipse.
 
 Or make the hat circle around the cat. Or alter the animation in some other interesting way.
 
