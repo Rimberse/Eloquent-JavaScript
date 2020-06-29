@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eloquent JavaScript | Part II Chapter 15</title>
+
+    <style>
+        html {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .window {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 800;
+            color: darkslategray;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(32, 30, 30);
+        }
+
+        .info {
+            font-size: 18px;
+            font-weight: 600;
+            display: block;
+            text-align: center;
+        }
+
+        .tab {
+            margin-bottom: 50px;
+            width: 175px;
+            height: 35px;
+            font-size: 18px;
+            font-weight: 600;
+            color: lightgray;;
+            background-color: transparent;
+            border-style: none;
+            outline: none;
+            transition: color, background-color 0.25s;
+            display: none;
+        }
+
+        .active {
+            color: snow;
+            background-color: lightgray;
+        }
+
+        .tab:hover {
+            color: snow;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <button class='tab' data-tabname='Main'></button><button class='tab' data-tabname='Sub'></button><button class='tab' data-tabname='Additional'></button>
+    <div class='window' id='Main'>
+        <h1>Main Window</h1>
+        <p><span class='info'>This is a main window.</span><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis id aliquam,
+            excepturi cum doloribus molestiae earum repellendus quod debitis omnis voluptatibus ad eligendi, possimus
+            quisquam ipsam veritatis non maxime sapiente! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
+            molestiae porro voluptatem illo quod esse inventore, debitis dolore explicabo similique dolorum velit unde
+            enim ipsa iusto, labore soluta nemo iure! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
+            libero vel molestiae inventore exercitationem minus deserunt totam fugiat quia sapiente! Quidem doloribus,
+            quae saepe quia deleniti porro cupiditate vitae! Sequi? Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Sunt nesciunt dolore in dicta nisi ad rem aperiam, quas ab perspiciatis soluta labore, obcaecati autem
+            unde sapiente dolor maiores error enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, qui
+            eos? Consectetur eveniet nihil, nemo sunt in dignissimos quaerat a quidem commodi vero eos aperiam. Dolor
+            quisquam sapiente magni deleniti! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
+            consequatur impedit, aliquid nesciunt asperiores quis dolore tempore temporibus, veniam, praesentium
+            eligendi nobis rem quisquam. Quidem, voluptatibus itaque? Repellat, enim provident?
+        </p>
+    </div>
+
+    <div class='window' id='Sub'>
+        <h1>Sub Window</h1>
+        <p><span class='info'>This is a sub window.</span><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis id aliquam,
+            excepturi cum doloribus molestiae earum repellendus quod debitis omnis voluptatibus ad eligendi, possimus
+            quisquam ipsam veritatis non maxime sapiente! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
+            molestiae porro voluptatem illo quod esse inventore, debitis dolore explicabo similique dolorum velit unde
+            enim ipsa iusto, labore soluta nemo iure! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
+            libero vel molestiae inventore exercitationem minus deserunt totam fugiat quia sapiente! Quidem doloribus,
+            quae saepe quia deleniti porro cupiditate vitae! Sequi? Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Sunt nesciunt dolore in dicta nisi ad rem aperiam, quas ab perspiciatis soluta labore, obcaecati autem
+            unde sapiente dolor maiores error enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, qui
+            eos? Consectetur eveniet nihil, nemo sunt in dignissimos quaerat a quidem commodi vero eos aperiam. Dolor
+            quisquam sapiente magni deleniti! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
+            consequatur impedit, aliquid nesciunt asperiores quis dolore tempore temporibus, veniam, praesentium
+            eligendi nobis rem quisquam. Quidem, voluptatibus itaque? Repellat, enim provident?
+        </p>
+    </div>
+
+    <div class='window' id='Additional'>
+        <h1>Additional Window</h1>
+        <p><span class='info'>This is an additional window.</span><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis id aliquam,
+            excepturi cum doloribus molestiae earum repellendus quod debitis omnis voluptatibus ad eligendi, possimus
+            quisquam ipsam veritatis non maxime sapiente! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
+            molestiae porro voluptatem illo quod esse inventore, debitis dolore explicabo similique dolorum velit unde
+            enim ipsa iusto, labore soluta nemo iure! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
+            libero vel molestiae inventore exercitationem minus deserunt totam fugiat quia sapiente! Quidem doloribus,
+            quae saepe quia deleniti porro cupiditate vitae! Sequi? Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Sunt nesciunt dolore in dicta nisi ad rem aperiam, quas ab perspiciatis soluta labore, obcaecati autem
+            unde sapiente dolor maiores error enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, qui
+            eos? Consectetur eveniet nihil, nemo sunt in dignissimos quaerat a quidem commodi vero eos aperiam. Dolor
+            quisquam sapiente magni deleniti! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
+            consequatur impedit, aliquid nesciunt asperiores quis dolore tempore temporibus, veniam, praesentium
+            eligendi nobis rem quisquam. Quidem, voluptatibus itaque? Repellat, enim provident?
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
