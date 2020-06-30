@@ -74,7 +74,7 @@ When you have that working, there is something else you could try. The way we ha
 <br>
 3. <b>A monster</b>
 
-<br>of to defeat. This exercise asks you to add such an actor type to the game.
+<br>It is traditional for platform games to have enemies that you can jump on top of to defeat. This exercise asks you to add such an actor type to the game.
 
 We’ll call it a monster. Monsters move only horizontally. You can make them move in the direction of the player, bounce back and forth like horizontal lava, or have any movement pattern you want. The class doesn’t have to handle falling, but it should make sure the monster doesn’t walk through walls.
 
